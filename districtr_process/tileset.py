@@ -63,7 +63,7 @@ class Tileset:
             "type": self.source_type,
             "source": {
                 "type": "vector",
-                "url": "mapbox://districtr.{}".format(self.upload_id),
+                "url": "mapbox://kaytwo.{}".format(self.upload_id),
             },
             "sourceLayer": self.upload_id,
         }
