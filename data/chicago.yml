@@ -8,31 +8,31 @@ districting_problems:
       units: [blocks]
 units:
     - id: blocks
-      source: ./shapes/chicago 2020 population estimate.shp
+      source: ./shapes/chicago_2020_PL_data.shp
       id_column:
-          key: GEOID
+          key: GEOID20
           name: 2020 Census Block
       unit_type: block
       column_sets:
           - name: Population
             subgroups:
-                - key: p20_nh_wh
+                - key: P0020005
                   name: White population
-                - key: p20_nh_aa
+                - key: P0020006
                   name: Black population
-                - key: p20_h_tot
+                - key: P0020002
                   name: Hispanic population
-                - key: p20_nh_asi
+                - key: P0020008
                   name: Asian population
-                - key: p20_nh_ai
+                - key: P0020007
                   name: American Indian population
-                - key: p20_nh_pac
+                - key: P0020009
                   name: Native Hawaiian and Pacific Islander population
-                - key: p20_nh_tom
+                - key: P0020011
                   name: Two or more races
-                - key: p20_nh_oth
+                - key: P0020010
                   name: Other races
             total:
-                key: p20_totpop
+                key: P0010001
                 name: Total population
             type: population
